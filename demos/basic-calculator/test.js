@@ -20,7 +20,7 @@ describe('Calculator', function () {
 
       it.skip('adds values', function () {
         var calculator = new Calculator(4);
-        assert(calculator.add(2), 6);
+        assert.equal(calculator.add(2).value, 6);
       });
 
     });
@@ -34,7 +34,7 @@ describe('Calculator', function () {
 
       it.skip('subtracts values', function () {
         var calculator = new Calculator(4);
-        assert(calculator.subtract(2), 2);
+        assert.equal(calculator.subtract(2).value, 2);
       });
 
     });
@@ -48,7 +48,7 @@ describe('Calculator', function () {
 
       it.skip('multiplies values', function () {
         var calculator = new Calculator(4);
-        assert(calculator.multiplyBy(2), 8);
+        assert.equal(calculator.multiplyBy(2).value, 8);
       });
 
     });
@@ -62,7 +62,7 @@ describe('Calculator', function () {
 
       it.skip('divides values', function () {
         var calculator = new Calculator(4);
-        assert(calculator.divideBy(2), 2);
+        assert.equal(calculator.divideBy(2).value, 2);
       });
 
     });
