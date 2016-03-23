@@ -12,11 +12,11 @@ describe('prefixLog - Currying', function () {
 
   // Only unskip these tests if you are using trying to use currying.
 
-  it.skip('should return a function', function () {
+  it('should return a function', function () {
     assert.equal(typeof prefixLog('PREFIX'), 'function');
   });
 
-  it.skip('should return a function that accepts a message and uses the prefix', function () {
+  it('should return a function that accepts a message and uses the prefix', function () {
     var prefixWithPrefix = prefixLog('PREFIX');
     assert.equal(prefixWithPrefix('message'), 'PREFIX: message');
   });
